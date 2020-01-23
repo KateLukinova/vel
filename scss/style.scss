@@ -634,9 +634,21 @@ table.dataTable tbody td.hash {
   width: 100%;
   padding-left: 0;
   margin-bottom: 30px;
+  line-height: 1.5;
 }
 .breadcrumb-item.active {
   color: $acc-color3;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link, .table-sm th, .table-sm td {
+  padding: 12px 5px;
+  svg {
+    color: $acc-color1;
+    font-size: 12px;
+  }
+}
+.table-responsive .table-sm td {
+  min-width: 220px;
 }
 @media screen and (max-width: 990px) {
   .list-group {

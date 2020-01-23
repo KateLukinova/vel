@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transactions Info</title>
+    <link rel="stylesheet" href="scss/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" href="scss/style.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.10.2/js/all.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<header>
+    <div class="header__main">
+        <div class="wrapper wrapper-row">
+            <a href="#" class="logo">LOGO</a>
+            <nav id="top-nav">
+                <ul class="">
+
+                    <li><a href="https://google.com" target="_blank">Home</a></li>
+
+                    <li class="dropdown"><a href="#">Blockchain <i class="fas fa-sort-down"></i> </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Blocks</a></li>
+                            <li><a href="#">Transactions</a></li>
+                            <li><a href="#">Accounts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="select__container">
+                    <label for="network">Network:</label>
+                    <select name="network" id="network">
+                        <option value="Velprot" selected>Velprot</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="header__top">
+        <div class="wrapper wrapper-row">
+            <div class="search-box">
+                <div class="search__container">
+                    <input class="search__input" type="text" placeholder="Search transaction,account, etc">
+                    <button class="search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="wrapper">
+    <div aria-label="breadcrumb mt-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="transactions.html">Transactions</a>
+            </li>
+            <li aria-current="page" class="breadcrumb-item active">Transactions Info</li>
+        </ol>
+    </div>
+    <ul class="nav nav-tabs mt-3 border-bottom-0">
+        <li class="nav-item">
+            <a class="nav-link active">Transaction Info</a>
+        </li>
+    </ul>
+    <div class="tab-content table-responsive">
+        <table class="table table-sm border-left border-bottom">
+            <thead>
+            <tr></tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Id:
+                    <i data-toggle="tooltip"
+                          title=""
+                          class="fa fa-question-circle tt"
+                          data-original-title="Unique identifier that is generated whenever a transaction is executed">
+                    </i>
+                </td>
+                <td class="brk">8175319.1
+                    <i class="fa fa-copy cpy" data-value="8175319.1"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>Status:
+                    <i data-toggle="tooltip"
+                       title=""
+                       class="fa fa-question-circle tt"
+                       data-original-title="The status of the transaction">
+                    </i>
+                </td>
+                <td class="text-success">Success</td>
+            </tr>
+            <tr>
+                <td>Block:
+                    <i data-toggle="tooltip"
+                       title=""
+                       class="fa fa-question-circle tt"
+                       data-original-title="Unique identifier of the block in which the transaction was recorded">
+                    </i>
+                </td>
+                <td class="brk">
+                    <a href="#">8175319</a>
+                    <i class="fa fa-copy cpy"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>Time stamp:
+                    <i data-toggle="tooltip"
+                       title=""
+                       class="fa fa-question-circle tt"
+                       data-original-title="The date and time at which a transaction was added"></i>
+                </td>
+                <td class="brk">13d 23h 54m 43s ago (Thu, 09 Jan 2020 11:32:23 GMT)</td>
+            </tr>
+            <tr>
+                <td>Sender:
+                    <i data-toggle="tooltip"
+                       title=""
+                       class="fa fa-question-circle tt"
+                       data-original-title="The sending party of the transaction"></i>
+                </td>
+                <td class="brk">
+                    <a href="#">83t2BpkQqs5C1AqUQKwKb9M91gXuNWyiL2MB2WTLnGMP</a>
+                    <i class="fa fa-copy cpy"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>Receiver:
+                    <i data-toggle="tooltip"
+                       title=""
+                       class="fa fa-question-circle tt"
+                       data-original-title="The receiving party of the transaction"></i>
+                </td>
+                <td class="brk">
+                    <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+                    <i class="fa fa-copy cpy"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>Value:
+                    <i data-toggle="tooltip"
+                       title=""
+                       class="fa fa-question-circle tt"
+                       data-original-title="The value that is being transacted in VC or Tokens"></i>
+                </td>
+                <td>100 $</td>
+            </tr>
+            <tr>
+                <td>Fee:
+                    <i data-toggle="tooltip"
+                       title=""
+                       class="fa fa-question-circle tt"
+                       data-original-title="Amount paid to process the transaction">
+                    </i>
+                </td>
+                <td>0 VC</td>
+            </tr>
+            <tr>
+                <td>Tx type</td>
+                <td class="brk">
+                    <span>Smart contract execution</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Method</td>
+                <td class="brk">
+                    <span>burn(100)</span>
+                </td>
+            </tr>
+            <tr>
+                <td>State Tx</td>
+                <td class="brk">
+                    <a href="#">8175322.1</a>
+                    <i data-value="8175322.1" class="fa fa-copy cpy"></i>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<footer>
+    <div class="wrapper wrapper-row">
+        <div class="company">
+            Company name
+        </div>
+        <div class="icon-box">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-telegram-plane"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
