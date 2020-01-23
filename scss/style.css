@@ -84,6 +84,9 @@ a:hover {
   color: #109CF1; }
 
 a.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 25px;
   font-family: "Inter-Bold", sans-serif; }
 
@@ -130,7 +133,7 @@ header {
   width: 100%; }
   header .header__top, header .header__main {
     width: 100%;
-    height: 70px;
+    height: 90px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -167,7 +170,8 @@ header {
       display: flex;
       -webkit-box-pack: end;
       -ms-flex-pack: end;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+      margin-right: 25px; }
     header nav a {
       margin-left: 15px; }
 
@@ -187,7 +191,7 @@ header {
     justify-content: space-between; }
 
 .search-box {
-  width: 45%;
+  width: 97%;
   min-width: 300px; }
   .search-box .search__container {
     position: relative;
@@ -267,17 +271,18 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "Inter-Medium", sans-serif; }
+  font-family: "Inter-Medium", sans-serif;
+  color: white; }
   .select__container select {
     width: 100px;
-    padding: 12px;
+    padding: 8px 12px;
     padding-right: 0;
     font-size: 14px;
     line-height: 18px;
-    color: #575756;
+    color: white;
     background-color: transparent;
     border-radius: 50px;
-    border: 1px solid #575756;
+    border: 1px solid white;
     -webkit-transition: all 250ms ease-in-out;
     -o-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
@@ -494,24 +499,21 @@ ul.dropdown-menu {
 @media screen and (max-width: 990px) {
   .list-group {
     width: 100%;
-    min-width: auto; } }
-@media screen and (max-width: 680px) {
-  header .header__top {
-    height: auto;
-    padding: 15px 0; }
-    header .header__top .wrapper.wrapper-row {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-      flex-direction: column-reverse; }
+    min-width: auto; }
 
   .search-box {
     width: 95%;
-    margin-top: 10px; }
-
-  .select__container {
-    -ms-flex-item-align: end;
-    align-self: flex-end; }
+    margin-top: 10px; } }
+@media screen and (max-width: 680px) {
+  header .header__main {
+    height: auto;
+    padding: 15px 0; }
+    header .header__main .select__container {
+      margin-bottom: 10px; }
+  header nav {
+    flex-direction: column-reverse; }
+    header nav ul {
+      margin-right: 10px; }
 
   .card {
     width: 100%; } }
