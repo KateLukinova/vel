@@ -21,5 +21,5 @@ $(document).ready(function() {
 
     });
 
-    // chart
+    $('#myTable').DataTable();
 });

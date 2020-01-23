@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transactions</title>
+    <link rel="stylesheet" href="scss/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" href="scss/style.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.10.2/js/all.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<header>
+    <div class="header__main">
+        <div class="wrapper wrapper-row">
+            <a href="#" class="logo">LOGO</a>
+            <nav id="top-nav">
+                <ul class="">
+
+                    <li><a href="https://google.com" target="_blank">Home</a></li>
+
+                    <li class="dropdown"><a href="#">Blockchain <i class="fas fa-sort-down"></i> </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Blocks</a></li>
+                            <li><a href="#">Transactions</a></li>
+                            <li><a href="#">Accounts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="select__container">
+                    <label for="network">Network:</label>
+                    <select name="network" id="network">
+                        <option value="Velprot" selected>Velprot</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="header__top">
+        <div class="wrapper wrapper-row">
+            <div class="search-box">
+                <div class="search__container">
+                    <input class="search__input" type="text" placeholder="Search transaction,account, etc">
+                    <button class="search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="wrapper">
+    <div aria-label="breadcrumb mt-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li aria-current="page" class="breadcrumb-item active">Transactions</li>
+        </ol>
+    </div>
+    <table id="myTable" class="table table-sm table-striped border-bottom border-primary table_info_trans">
+        <thead class="thead-light">
+        <tr>
+            <th>№</th>
+            <th>Id</th>
+            <th>Score</th>
+            <th>Status</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Time</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">8175319.1</a>
+            </td>
+            <td>4</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">83t2BpkQqs5C1AqUQKwKb9M91gXuNWyiL2MB2WTLnGMP</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>09.01.2020, 14:32:23</td>
+            <td class="hash">100 $</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">8175313.1</a>
+            </td>
+            <td>4</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">G3c7qdtJ5Fw12yu2b9StnyRYrPsyC41JTebwBM37Kekq</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>09.01.2020, 14:32:20</td>
+            <td class="hash">100 $</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">7564917.1</a>
+            </td>
+            <td>5</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">83t2BpkQqs5C1AqUQKwKb9M91gXuNWyiL2MB2WTLnGMP</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>05.01.2020, 13:57:46</td>
+            <td class="hash">100 $</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">7564910.1</a>
+            </td>
+            <td>4</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">G3c7qdtJ5Fw12yu2b9StnyRYrPsyC41JTebwBM37Kekq</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>05.01.2020, 13:57:42</td>
+            <td class="hash">100 $</td></tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">7302575.1</a>
+            </td>
+            <td>4</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">83t2BpkQqs5C1AqUQKwKb9M91gXuNWyiL2MB2WTLnGMP</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>03.01.2020, 20:30:44</td>
+            <td class="hash">1000 $</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">8175319.1</a>
+            </td>
+            <td>4</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">83t2BpkQqs5C1AqUQKwKb9M91gXuNWyiL2MB2WTLnGMP</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>09.01.2020, 14:32:23</td>
+            <td class="hash">100 $</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">8175313.1</a>
+            </td>
+            <td>4</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">G3c7qdtJ5Fw12yu2b9StnyRYrPsyC41JTebwBM37Kekq</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>09.01.2020, 14:32:20</td>
+            <td class="hash">100 $</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">7564917.1</a>
+            </td>
+            <td>5</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">83t2BpkQqs5C1AqUQKwKb9M91gXuNWyiL2MB2WTLnGMP</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>05.01.2020, 13:57:46</td>
+            <td class="hash">100 $</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">7564910.1</a>
+            </td>
+            <td>4</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">G3c7qdtJ5Fw12yu2b9StnyRYrPsyC41JTebwBM37Kekq</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>05.01.2020, 13:57:42</td>
+            <td class="hash">100 $</td></tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">7302575.1</a>
+            </td>
+            <td>4</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">83t2BpkQqs5C1AqUQKwKb9M91gXuNWyiL2MB2WTLnGMP</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>03.01.2020, 20:30:44</td>
+            <td class="hash">1000 $</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">8175319.1</a>
+            </td>
+            <td>4</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">83t2BpkQqs5C1AqUQKwKb9M91gXuNWyiL2MB2WTLnGMP</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>09.01.2020, 14:32:23</td>
+            <td class="hash">100 $</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">8175313.1</a>
+            </td>
+            <td>4</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">G3c7qdtJ5Fw12yu2b9StnyRYrPsyC41JTebwBM37Kekq</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>09.01.2020, 14:32:20</td>
+            <td class="hash">100 $</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">7564917.1</a>
+            </td>
+            <td>5</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">83t2BpkQqs5C1AqUQKwKb9M91gXuNWyiL2MB2WTLnGMP</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>05.01.2020, 13:57:46</td>
+            <td class="hash">100 $</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">7564910.1</a>
+            </td>
+            <td>4</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">G3c7qdtJ5Fw12yu2b9StnyRYrPsyC41JTebwBM37Kekq</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>05.01.2020, 13:57:42</td>
+            <td class="hash">100 $</td></tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">7302575.1</a>
+            </td>
+            <td>4</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">83t2BpkQqs5C1AqUQKwKb9M91gXuNWyiL2MB2WTLnGMP</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>03.01.2020, 20:30:44</td>
+            <td class="hash">1000 $</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">8175319.1</a>
+            </td>
+            <td>4</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">83t2BpkQqs5C1AqUQKwKb9M91gXuNWyiL2MB2WTLnGMP</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>09.01.2020, 14:32:23</td>
+            <td class="hash">100 $</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">8175313.1</a>
+            </td>
+            <td>4</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">G3c7qdtJ5Fw12yu2b9StnyRYrPsyC41JTebwBM37Kekq</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>09.01.2020, 14:32:20</td>
+            <td class="hash">100 $</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">7564917.1</a>
+            </td>
+            <td>5</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">83t2BpkQqs5C1AqUQKwKb9M91gXuNWyiL2MB2WTLnGMP</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>05.01.2020, 13:57:46</td>
+            <td class="hash">100 $</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">7564910.1</a>
+            </td>
+            <td>4</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">G3c7qdtJ5Fw12yu2b9StnyRYrPsyC41JTebwBM37Kekq</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>05.01.2020, 13:57:42</td>
+            <td class="hash">100 $</td></tr>
+        <tr>
+            <td>1</td>
+            <td class="hash">
+                <a href="#">7302575.1</a>
+            </td>
+            <td>4</td>
+            <td class="">Pending</td>
+            <td class="hash">
+                <a href="#">83t2BpkQqs5C1AqUQKwKb9M91gXuNWyiL2MB2WTLnGMP</a>
+            </td>
+            <td class="hash">
+                <a href="#">2RKspUoTEECwJQvxXbtPDPkcGmhYGcpjVbcjGMiHzGQA</a>
+            </td>
+            <td>03.01.2020, 20:30:44</td>
+            <td class="hash">1000 $</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<footer>
+    <div class="wrapper wrapper-row">
+        <div class="company">
+            Company name
+        </div>
+        <div class="icon-box">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-telegram-plane"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

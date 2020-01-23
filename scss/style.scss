@@ -82,8 +82,20 @@ $acc-color3: #109CF1;
 $body-color: #192A3E;
 $body-color-gray: #EBEFF2;
 
-
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 100vw;
   min-height: 100vh;
   font-size: 16px;
@@ -105,8 +117,14 @@ a:hover {
 }
 
 a.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 25px;
   font-family: "Inter-Bold", sans-serif;
@@ -169,8 +187,8 @@ header {
   }
   .header__main {
     background: rgb(63,195,217);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #3fc3d9), color-stop(50%, #57b7f2), to(rgb(46, 212, 122)));
     background: -o-linear-gradient(top, #3fc3d9 30%, #57b7f2 50%, rgb(46, 212, 122) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #3fc3d9), color-stop(50%, #57b7f2), to(rgb(46, 212, 122)));
     background: linear-gradient(180deg, #3fc3d9 30%, #57b7f2 50%, rgb(46, 212, 122) 100%);
     -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.5);
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
@@ -211,7 +229,7 @@ header {
   width: 100%;
   padding: 0 15px;
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
   &.wrapper-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -238,7 +256,7 @@ header {
       -ms-flex-align: center;
       align-items: center;
       position: absolute;
-      right: 0;
+      right: 20px;
       top: 50%;
       -webkit-transform: translate(50%, -50%);
       -ms-transform: translate(50%, -50%);
@@ -350,8 +368,8 @@ ul.dropdown-menu{
   position: absolute;
   min-width: 120px;
   background: rgb(63,195,217);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #3fc3d9), color-stop(50%, #57b7f2), to(rgb(46, 212, 122)));
   background: -o-linear-gradient(top, #3fc3d9 30%, #57b7f2 50%, rgb(46, 212, 122) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #3fc3d9), color-stop(50%, #57b7f2), to(rgb(46, 212, 122)));
   background: linear-gradient(180deg, #3fc3d9 30%, #57b7f2 50%, rgb(46, 212, 122) 100%);
   border-radius: 4px;
   margin-top: 5px;
@@ -554,7 +572,72 @@ ul.dropdown-menu{
   text-align: right;
 }
 
+footer  {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+  background-color: $acc-color3;
+  height: 70px;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 0;
+  .icon-box {
+    a {
+      color: white;
+    }
+  }
+}
+.icon-box {
+  a {
+    margin-right: 12px;
+  }
+}
 
+table.dataTable tbody td.hash {
+  max-width: 150px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.dataTables_wrapper {
+  overflow-x: scroll;
+  font-size: 14px;
+  font-family: "Inter-Regular", sans-serif;
+}
+.dataTables_wrapper .dataTables_filter {
+  display: none;
+}
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+  margin-bottom: 15px;
+  color: $acc-color3;
+}
+
+.dataTables_length select {
+  border: 1px solid $acc-color3;
+  border-radius: 4px;
+  margin: 0 5px;
+}
+.breadcrumb {
+  background-color: transparent;
+  width: 100%;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+.breadcrumb-item.active {
+  color: $acc-color3;
+}
 @media screen and (max-width: 990px) {
   .list-group {
     width: 100%;
@@ -576,6 +659,9 @@ ul.dropdown-menu{
       }
     }
     nav {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
       flex-direction: column-reverse;
       ul {
         margin-right: 10px;
